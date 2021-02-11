@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="h-screen text-gray-800 antialiased">
     <Nuxt />
   </div>
 </template>

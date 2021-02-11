@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'crearfacturas',
+    title: 'InvoiceMaker | Como crear facturas rápidamente',
     htmlAttrs: {
       lang: 'en'
     },
@@ -30,7 +30,16 @@ export default {
   buildModules: [
     // Tailwind CSS
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/fontawesome'
   ],
+
+  fontawesome: {
+    component: 'fa',
+    icons: {
+      solid: true,
+      brands: true
+    }
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
