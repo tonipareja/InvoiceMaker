@@ -11,12 +11,13 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@fortawesome/fontawesome-free/css/all.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -30,16 +31,8 @@ export default {
   buildModules: [
     // Tailwind CSS
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/fontawesome'
+    
   ],
-
-  fontawesome: {
-    component: 'fa',
-    icons: {
-      solid: true,
-      brands: true
-    }
-  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

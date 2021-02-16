@@ -1,9 +1,9 @@
 <template>
-    <header class="flex items-center h-20 justify-between">
-        <h4 class="text-xl font-semibold"><NuxtLink to="/"><span class="font-bold text-verde">Invoice</span>Maker</NuxtLink></h4>
+    <header class="flex items-center h-20 justify-between container max-w-5xl mx-auto px-4 sm:px-6">
+        <h4 class="text-2xl font-semibold"><NuxtLink to="/"><span class="font-bold text-verde">Invoice</span>Maker</NuxtLink></h4>
         <nav>
             <ul>
-              <li class="text-xl"><NuxtLink to="/login">Log In</Nuxtlink></li>
+              <NuxtLink to="/auth/login"><li class="text-lg">Log In</li></Nuxtlink>
             </ul>
         </nav>
     </header> 
