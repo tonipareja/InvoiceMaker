@@ -44,23 +44,28 @@ export default {
 
   firebase: {
     config: {
-          apiKey: 'AIzaSyDXzUoswUVCOuRIgJNgJKbcS5VZZztv5lo',
-          authDomain: 'invoicemaker-b5d75.firebaseapp.com',
-          databaseURL: 'https://invoicemaker-b5d75-default-rtdb.firebaseio.com/',
-          projectId: 'invoicemaker-b5d75',
-          storageBucket: 'invoicemaker-b5d75.appspot.com',
-          messagingSenderId: '267070805983',
-          appId: '1:267070805983:web:bb5637909477c970af566a',
-          measurementId: 'G-YY0M02PGLB'
+          apiKey: process.env.VUE_FIREBASE_PROJECT_API_KEY,
+          authDomain: "invoicemaker-b5d75.firebaseapp.com",
+          databaseURL: "https://invoicemaker-b5d75-default-rtdb.firebaseio.com",
+          projectId: "invoicemaker-b5d75",
+          storageBucket: "invoicemaker-b5d75.appspot.com",
+          messagingSenderId: "267070805983",
+          appId: "1:267070805983:web:bb5637909477c970af566a",
+          measurementId: "G-YY0M02PGLB"
         },
         services: {
-          auth: true, // Just as example. Can be any other service.
+          auth: true,
           firestore: true,
           storage: true,
           analytics: true,
           performance: true,
         }
   },
+
+  env: {
+    VUE_FIREBASE_PROJECT_API_KEY: process.env.VUE_FIREBASE_PROJECT_API_KEY
+  },
+
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
