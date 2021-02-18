@@ -43,8 +43,8 @@ export default {
   ],
 
   firebase: {
-    config: {
-          apiKey: process.env.VUE_FIREBASE_PROJECT_API_KEY,
+        config: {
+          apiKey: "AIzaSyDXzUoswUVCOuRIgJNgJKbcS5VZZztv5lo",
           authDomain: "invoicemaker-b5d75.firebaseapp.com",
           databaseURL: "https://invoicemaker-b5d75-default-rtdb.firebaseio.com",
           projectId: "invoicemaker-b5d75",
@@ -63,9 +63,8 @@ export default {
   },
 
   env: {
-    VUE_FIREBASE_PROJECT_API_KEY: process.env.VUE_FIREBASE_PROJECT_API_KEY
+    VUE_APP_FIREBASE_KEY: process.env.VUE_APP_FIREBASE_KEY
   },
-
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},

@@ -8,12 +8,14 @@
 </template>
 
 <script>
+import firebase from "firebase/app";
+
 export default {
   methods: {
     async loginWithGoogle() {
       try {
-        const provider = new this.$fireAuthObj.GoogleAuthProvider();
-        const result = await this.$fireAuth.signInWithPopup(provider);
+        const provider = new firebase.auth.GoogleAuthProvider();
+        const result = await this.$fire.auth.signInWithPopup(provider);
         console.log(result);
       } catch {
         //TODO show toast
