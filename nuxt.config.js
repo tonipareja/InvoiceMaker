@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -40,11 +42,13 @@ export default {
     '@nuxtjs/axios',
     //https://firebase.nuxtjs.org/
     '@nuxtjs/firebase',
+
+    '@nuxtjs/dotenv',
   ],
 
   firebase: {
         config: {
-          apiKey: "AIzaSyDXzUoswUVCOuRIgJNgJKbcS5VZZztv5lo",
+          apiKey: process.env.VUE_APP_FIREBASE_KEY,
           authDomain: "invoicemaker-b5d75.firebaseapp.com",
           databaseURL: "https://invoicemaker-b5d75-default-rtdb.firebaseio.com",
           projectId: "invoicemaker-b5d75",
