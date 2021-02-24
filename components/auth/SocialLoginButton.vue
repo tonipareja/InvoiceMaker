@@ -1,10 +1,10 @@
 <template>
   <button
-    class="text-base sm:text-xl py-3 px-8 border-2 rounded-lg text-grisaceo w-full sm:w-auto mb-4 focus:outline-none"
+    class="text-sm sm:text-base py-3 border-2 rounded-lg text-grisaceo w-full focus:outline-none"
     :class="type"
     @click="$emit('click')"
   >
-    <i class="fab fa-google mr-4"></i>Iniciar sesión con Google
+    <i class="fab fa-google mr-4"></i>Regístrate con Google
   </button>
 </template>
 
